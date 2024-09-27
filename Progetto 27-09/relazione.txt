@@ -1,0 +1,4 @@
+come prima cosa ho importato gli IP delle due macchine agli indirizzi richiesti. La Kali è impostata su 192.168.11.111, e l metasploitable all'indirizzo 192.168.11.112.
+
+Avvio successivamente il MetaSpoloit Framework attraverso il comando "msfconsole". Da lì cerco il modulo Java RMI e tra le opzioni scelgo il numero 8, che seleziono con il comando "use 8".
+Capito come funziona il modulo e di quali parametri abbia bisogno con il comando "options", imposto l'IP della macchina target con "set rhosts 192.168.11.112" e gli do il comando "exploit" per farlo partire. Questo mi apre la sessione Meterpreter, dalla quale sono in grado di eseguire i comandi "ifconfig" e "route" per ottenere informazioni in merito alle configurazioni di rete e tabella di routing della macchina vittima. Chiudo tutto con "exit" e reimposto gli IP delle due macchine ai loro valori originali.		
